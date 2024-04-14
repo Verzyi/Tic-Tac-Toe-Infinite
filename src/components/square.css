@@ -1,0 +1,32 @@
+.square {
+    width: 100px; /* Adjust width and height as needed */
+    height: 100px;
+    font-size: 200px; /* Increased font size */
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Default background color */
+    border: 1px solid #ccc;
+    position: relative; /* Moved this line to merge the duplicate definition */
+}
+
+.square.X {
+    color: red;
+    font-size: 40px; /* Increased font size */
+}
+
+.square.O {
+    color: blue;
+    font-size: 40px; /* Increased font size */
+}
+
+.transparent {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
